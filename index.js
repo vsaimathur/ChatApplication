@@ -43,6 +43,7 @@ io.on("connection", (socket) => {
 	socket.on("disconnect", ()=>{
 		//emitting the name of user disconnect to all users except him
 		console.log(`user ${userConnections[socket.id]} disconnected`);
+        delete userConnections[socket.id];
 		socket.broadcast.emit("user_disconnected",{user_name : userConnections[socket.id]});
 	});
 
