@@ -1,0 +1,56 @@
+html
+{
+	height: 100vh;
+}
+body
+{
+	min-height: 100vh;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+	border : 2px solid grey;
+	background-color: lightblue;
+	min-height: 100vh;
+}
+.message_frame
+{
+	margin-top: auto;
+	font-family: "Comic Sans MS";	
+}
+
+.list-item-group
+{
+	text-align: left;
+	font-family: "Comic Sans MS";
+}
+
+.msgs_sent
+{
+	background-color: white;
+	border: 1px solid grey;
+	word-wrap: normal;
+}
+
+.msgs_received
+{
+	background-color: white;
+	border : 1px solid grey;
+	word-wrap:  normal;
+}
+
+.user_joined
+{
+	background-color: yellow;
+	border : 1px solid grey;
+	font-family: "Comic Sans MS";
+}
+
+.user_disconnected
+{
+	background-color: yellow;
+	border : 1px solid grey;
+	font-family: "Comic Sans MS";
+}
